@@ -12,6 +12,4 @@ def post_new_order():
 def get_order(track_number):
     return requests.get(configuration.URL_SERVICE + configuration.GET_ORDER,
                         params={"t": track_number})
-#response2 = get_order()
-#print(response2.json())
 
