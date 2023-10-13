@@ -1,11 +1,12 @@
 -- noinspection SqlNoDataSourceInspectionForFile
 Задание 1
 SELECT "Couriers".login,
-COUNT("Orders"."inDelivery")
+COUNT(*)
 FROM "Couriers"
 LEFT JOIN "Orders" ON "Couriers".id = "Orders"."courierId"
 WHERE "Orders"."inDelivery" = true
 GROUP BY "Couriers".login;
+
 
 Задание 2
 SELECT track,
